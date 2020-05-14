@@ -2,7 +2,7 @@
 
 module.exports.rules =
 {
-  'no-full-fp-lib' : require( './rules/no-full-fp-lib' ),
+  'space-in-parens-advanced' : require( './Rule.js' ),
 };
 
 module.exports.configs =
@@ -11,7 +11,7 @@ module.exports.configs =
   {
     rules :
     {
-      'tumblbug/no-full-fp-lib' : 2,
+      'space-in-parens-advanced' : 2,
     },
   },
 };
