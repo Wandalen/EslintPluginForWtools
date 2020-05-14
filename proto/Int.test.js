@@ -5,7 +5,11 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( 'wTesting' ); debugger;
+  let _ = require( 'wTesting' );
+
+  debugger;
+  let plugin = require( 'eslint.space.in.parens.advanced' );
+  debugger;
 
 }
 

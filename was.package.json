@@ -1,6 +1,6 @@
 {
-  "name" : "eslint.space.in.parens.advanced",
-  "version" : "0.3.3",
+  "name" : "eslint-plugin-wtools",
+  "version" : "0.3.0",
   "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
@@ -17,6 +17,6 @@
     "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
   },
   "dependencies" : { "eslint" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "", "eslint.space.in.parens.advanced" : "file:." },
+  "devDependencies" : { "wTesting" : "", "eslint" : "", "eslint-plugin-wtools" : "file:." },
   "keywords" : [ "eslint", "space-in-parens" ]
 }
