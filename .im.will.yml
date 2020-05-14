@@ -37,7 +37,7 @@ path :
       content : prime
 
   entry.proto.no.tests :
-    path : proto/Index.js
+    path : proto/Main.js
     criterion :
       tests : 'no.tests'
   entry.proto.only.tests :
