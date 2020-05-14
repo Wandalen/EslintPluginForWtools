@@ -1,35 +1,23 @@
 {
-  "name": "eslint-plugin-for-wtools",
-  "version": "0.3.2",
-  "description": "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
-  "author": "Kostiantyn Wandalen <wanalen@01.school>",
-  "license": "MIT",
-  "main": "proto/Main.js",
-  "files": [
-    "proto"
-  ],
-  "scripts": {
-    "test": "wtest .run proto",
-    "docgen": "wdocgen .build proto"
+  "name" : "eslint-plugin-for-wtools",
+  "version" : "0.3.3",
+  "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/Main.js",
+  "files" : [ "proto" ],
+  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/EslintPluginForWtools.git"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Wandalen/EslintPluginForWtools.git"
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/EslintPluginForWtools/issues"
   },
-  "bugs": {
-    "url": "https://github.com/Wandalen/EslintPluginForWtools/issues"
-  },
-  "dependencies": {
-    "lodash": ""
-  },
-  "devDependencies": {
-    "eslint": "7.0.0",
-    "eslint-plugin-for-wtools": "file:.",
-    "eslint-plugin-unicorn": "^20.0.0",
-    "wTesting": "alpha"
-  },
-  "keywords": [
-    "eslint",
-    "space-in-parens"
-  ]
+  "dependencies" : { "lodash" : "4.17.15" },
+  "peerDependency" : { "eslint" : "" },
+  "devDependencies" : { "eslint-plugin-for-wtools" : "file:.", "wTesting" : "alpha" },
+  "keywords" : [ "eslint", "eslintplugin", "space-in-parens" ]
 }
