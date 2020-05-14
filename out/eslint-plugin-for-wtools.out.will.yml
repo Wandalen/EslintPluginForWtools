@@ -1479,6 +1479,4 @@ module:
       ../.im.will.yml:
         hash: a1e5df05eedd411fc86328fce26c29e2
         size: 4487
-      eslint-plugin-for-wtools.out.will.yml:
-        hash: aff80195f4686381c9c90688e27c7ed7
-        size: 37776
+      eslint-plugin-for-wtools.out.will.yml: *ref_0
