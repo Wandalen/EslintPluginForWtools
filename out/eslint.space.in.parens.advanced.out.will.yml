@@ -2,10 +2,13 @@ format: outwillfile-2.0
 root:
   - eslint.space.in.parens.advanced.out
 consistency:
-  ../.ex.will.yml: &ref_0
+  eslint.space.in.parens.advanced.out.will.yml: &ref_0
+    hash: b9bfb6768d046e7c827f7d98047eb798
+    size: 37858
+  ../.ex.will.yml: &ref_1
     hash: 15216710925d7d0dcaa14f54484159a4
     size: 1886
-  ../.im.will.yml: &ref_1
+  ../.im.will.yml: &ref_2
     hash: 063987b0d307aef38c6d139a22a3a68d
     size: 4488
 module:
@@ -18,19 +21,19 @@ module:
         single argument call case.
       enabled: 1
       version: 0.4.0
-      interpreters: &ref_2
+      interpreters:
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
+      keywords:
         - eslint
         - space-in-parens
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors:
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: eslint.space.in.parens.advanced
-      npm.scripts: &ref_5
+      npm.scripts:
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -150,6 +153,7 @@ module:
           export: 1
         path:
           - ../proto
+          - ../proto/Int.test.js
           - ../proto/Main.js
           - ../proto/Rule.js
     submodule: {}
@@ -679,6 +683,24 @@ module:
           content: prime
         inherit:
           - files.transpile
+      exported.proto.export:
+        opts:
+          reflector: 'reflector::exported.proto.export*'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
+      exported.files.proto.export:
+        opts:
+          reflector: 'reflector::exported.files.proto.export*'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
     build:
       proto.export:
         steps:
@@ -767,8 +789,9 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      eslint.space.in.parens.advanced.out.will.yml: *ref_0
+      ../.ex.will.yml: *ref_1
+      ../.im.will.yml: *ref_2
   ../:
     about:
       name: eslint.space.in.parens.advanced
@@ -778,13 +801,21 @@ module:
         single argument call case.
       enabled: 1
       version: 0.4.0
-      interpreters: *ref_2
-      keywords: *ref_3
+      interpreters:
+        - njs >= 8.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      keywords:
+        - eslint
+        - space-in-parens
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
+      contributors:
+        - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: eslint.space.in.parens.advanced
-      npm.scripts: *ref_5
+      npm.scripts:
+        test: wtest .run proto/**
+        docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
@@ -1445,3 +1476,6 @@ module:
       ../.im.will.yml:
         hash: 063987b0d307aef38c6d139a22a3a68d
         size: 4488
+      eslint.space.in.parens.advanced.out.will.yml:
+        hash: b9bfb6768d046e7c827f7d98047eb798
+        size: 37858

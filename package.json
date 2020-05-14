@@ -1,33 +1,22 @@
 {
-  "name": "eslint.space.in.parens.advanced",
-  "version": "0.3.1",
-  "description": "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
-  "author": "Kostiantyn Wandalen <wanalen@01.school>",
-  "license": "MIT",
-  "main": "proto/Index.js",
-  "files": [
-    "proto"
-  ],
-  "scripts": {
-    "test": "wtest .run proto",
-    "docgen": "wdocgen .build proto"
+  "name" : "eslint.space.in.parens.advanced",
+  "version" : "0.3.2",
+  "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/Index.js",
+  "files" : [ "proto" ],
+  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced.git"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Wandalen/EslintSpaceInParensAdvanced.git"
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
   },
-  "bugs": {
-    "url": "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
-  },
-  "dependencies": {
-    "eslint": "7.0.0"
-  },
-  "devDependencies": {
-    "eslint.space.in.parens.advanced": "file:.",
-    "wTesting": "alpha"
-  },
-  "keywords": [
-    "eslint",
-    "space-in-parens"
-  ]
+  "dependencies" : { "eslint" : "7.0.0" },
+  "devDependencies" : { "eslint.space.in.parens.advanced" : "file:.", "wTesting" : "alpha", "eslint" : "7.0.0" },
+  "keywords" : [ "eslint", "space-in-parens" ]
 }
