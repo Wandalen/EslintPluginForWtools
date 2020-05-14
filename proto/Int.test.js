@@ -1,4 +1,5 @@
-( function _Int_test_s_() {
+( function _Int_test_s_()
+{
 
 'use strict';
 
@@ -8,7 +9,7 @@ if( typeof module !== 'undefined' )
   let _ = require( 'wTesting' );
 
   debugger;
-  let plugin = require( 'eslint.space.in.parens.advanced' );
+  let plugin = require( 'eslint-plugin-for-wtools' );
   debugger;
 
 }

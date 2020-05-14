@@ -2,7 +2,8 @@
 
 module.exports.rules =
 {
-  'space-in-parens-advanced' : require( './Rule.js' ),
+  'space-in-parens' : require( './rule/SpaceInParens.js' ),
+  'filename' : require( './rule/FileName.js' ),
 };
 
 module.exports.configs =
@@ -11,7 +12,8 @@ module.exports.configs =
   {
     rules :
     {
-      'space-in-parens-advanced' : 2,
+      'for-wools/space-in-parens' : 'error',
+      'for-wools/filename' : 'error',
     },
   },
 };
