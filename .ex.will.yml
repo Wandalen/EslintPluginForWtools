@@ -2,8 +2,8 @@
 
 about :
 
-  name : 'EslintSpaceInParensAdvanced'
-  description : '___'
+  name : 'eslints.pace.in.parens.advanced'
+  description : 'Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.'
   version : '0.4.0'
   enabled : 1
   interpreters :
@@ -11,13 +11,13 @@ about :
   - chrome >= 60.0.0
   - firefox >= 60.0.0
   keywords :
-  - tools
-  - wTools1
+  - eslint
+  - space-in-parens
   license : MIT
   author : 'Kostiantyn Wandalen <wanalen@01.school>'
   contributors :
   - 'Kostiantyn Wandalen <wanalen@01.school>'
-  npm.name : 'eslintspaceinparensadvanced'
+  npm.name : 'eslints.pace.in.parens.advanced'
   npm.scripts :
     test : 'wtest .run proto/**'
     docgen : 'wdocgen .build proto'
@@ -27,7 +27,7 @@ path :
   repository : git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git
   origins :
    - git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git
-   - npm:///EslintSpaceInParensAdvanced
+   - npm:///eslints.pace.in.parens.advanced
   bugtracker : https:///github.com/Wandalen/EslintSpaceInParensAdvanced/issues
 
 step :
@@ -92,4 +92,3 @@ build :
       # - build::npm
       - build::proto.export
       # - build::doc.export
-

@@ -1,15 +1,14 @@
 
 {
-  "name" : "eslintspaceinparensadvanced",
+  "name" : "eslints.pace.in.parens.advanced",
   "version" : "0.3.0",
-  "description" : "___",
+  "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
-  "main" : "proto/dwtools/___",
+  "main" : "proto/Index.js",
   "files" :
   [
-    "proto/dwtools/___",
-    "proto/dwtools/Tools1.s"
+    "proto"
   ],
   "scripts" :
   {
@@ -27,7 +26,6 @@
   },
   "dependencies" :
   {
-    "wTools1" : ""
   },
   "devDependencies" :
   {
@@ -36,6 +34,6 @@
   },
   "keywords" :
   [
-    "wTools1"
+    "eslint", "space-in-parens"
   ]
 }
