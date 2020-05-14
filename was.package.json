@@ -1,6 +1,6 @@
 
 {
-  "name" : "eslints.pace.in.parens.advanced",
+  "name" : "eslint.space.in.parens.advanced",
   "version" : "0.3.0",
   "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
@@ -18,19 +18,20 @@
   "repository" :
   {
     "type" : "git",
-    "url" : "https ://github.com/Wandalen/EslintSpaceInParensAdvanced.git"
+    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced.git"
   },
   "bugs" :
   {
-    "url" : "https ://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
+    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
   },
   "dependencies" :
   {
+    "eslint" : ""
   },
   "devDependencies" :
   {
     "wTesting" : "",
-    "eslintspaceinparensadvanced" : "file:."
+    "eslint.space.in.parens.advanced" : "file:."
   },
   "keywords" :
   [
