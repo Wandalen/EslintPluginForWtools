@@ -16,7 +16,7 @@
   {
     "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
   },
-  "dependencies" : { "eslint" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "", "eslint-plugin-wtools" : "file:." },
+  "dependencies" : { "eslint" : "7.0.0" },
+  "devDependencies" : { "eslint-plugin-wtools" : "file:.", "wTesting" : "alpha", "eslint" : "7.0.0" },
   "keywords" : [ "eslint", "space-in-parens" ]
 }
