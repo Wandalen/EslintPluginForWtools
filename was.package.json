@@ -1,5 +1,5 @@
 {
-  "name" : "eslint-plugin-wtools",
+  "name" : "eslint-plugin-for-wtools",
   "version" : "0.3.1",
   "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
@@ -10,13 +10,13 @@
   "repository" :
   {
     "type" : "git",
-    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced.git"
+    "url" : "https://github.com/Wandalen/EslintPluginForWtools.git"
   },
   "bugs" :
   {
-    "url" : "https://github.com/Wandalen/EslintSpaceInParensAdvanced/issues"
+    "url" : "https://github.com/Wandalen/EslintPluginForWtools/issues"
   },
   "dependencies" : { "eslint" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "", "eslint-plugin-wtools" : "file:." },
+  "devDependencies" : { "wTesting" : "", "eslint" : "", "eslint-plugin-for-wtools" : "file:." },
   "keywords" : [ "eslint", "space-in-parens" ]
 }

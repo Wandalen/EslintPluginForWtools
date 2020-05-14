@@ -62,13 +62,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+        path: 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+          - 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
           - 'npm:///eslint.space.in.parens.advanced'
       bugtracker:
-        path: 'https:///github.com/Wandalen/EslintSpaceInParensAdvanced/issues'
+        path: 'https:///github.com/Wandalen/EslintPluginForWtools/issues'
       in:
         path: .
       out:
@@ -815,13 +815,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+        path: 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+          - 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
           - 'npm:///eslint.space.in.parens.advanced'
       bugtracker:
-        path: 'https:///github.com/Wandalen/EslintSpaceInParensAdvanced/issues'
+        path: 'https:///github.com/Wandalen/EslintPluginForWtools/issues'
       in:
         path: .
       out:

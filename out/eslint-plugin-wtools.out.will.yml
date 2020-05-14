@@ -1,6 +1,6 @@
 format: outwillfile-2.0
 root:
-  - eslint-plugin-wtools.out
+  - eslint-plugin-for-wtools.out
 consistency:
   ../.ex.will.yml: &ref_0
     hash: fe4a0c3ea39a13245366aa0b85622fe8
@@ -9,9 +9,9 @@ consistency:
     hash: a1e5df05eedd411fc86328fce26c29e2
     size: 4487
 module:
-  eslint-plugin-wtools.out:
+  eslint-plugin-for-wtools.out:
     about:
-      name: eslint-plugin-wtools
+      name: eslint-plugin-for-wtools
       org: noorg
       description: >-
         Extends rule `space-in-parens` of `eslint`. Implement exception for
@@ -29,7 +29,7 @@ module:
       author: Kostiantyn Wandalen <wanalen@01.school>
       contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
-      npm.name: eslint-plugin-wtools
+      npm.name: eslint-plugin-for-wtools
       npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
@@ -37,11 +37,11 @@ module:
       module.willfiles:
         criterion:
           predefined: 1
-        path: eslint-plugin-wtools.out.will.yml
+        path: eslint-plugin-for-wtools.out.will.yml
       module.common:
         criterion:
           predefined: 1
-        path: eslint-plugin-wtools.out
+        path: eslint-plugin-for-wtools.out
       module.original.willfiles:
         criterion:
           predefined: 1
@@ -62,13 +62,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+        path: 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
-          - 'npm:///eslint-plugin-wtools'
+          - 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
+          - 'npm:///eslint-plugin-for-wtools'
       bugtracker:
-        path: 'https:///github.com/Wandalen/EslintSpaceInParensAdvanced/issues'
+        path: 'https:///github.com/Wandalen/EslintPluginForWtools/issues'
       in:
         path: .
       out:
@@ -772,7 +772,7 @@ module:
       ../.im.will.yml: *ref_1
   ../:
     about:
-      name: eslint-plugin-wtools
+      name: eslint-plugin-for-wtools
       org: noorg
       description: >-
         Extends rule `space-in-parens` of `eslint`. Implement exception for
@@ -784,7 +784,7 @@ module:
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
       contributors: *ref_4
-      npm.name: eslint-plugin-wtools
+      npm.name: eslint-plugin-for-wtools
       npm.scripts: *ref_5
     path:
       module.willfiles:
@@ -802,7 +802,7 @@ module:
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path: out/eslint-plugin-wtools.out.will.yml
+        path: out/eslint-plugin-for-wtools.out.will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -815,13 +815,13 @@ module:
         criterion:
           predefined: 1
       repository:
-        path: 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
+        path: 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/EslintSpaceInParensAdvanced.git'
-          - 'npm:///eslint-plugin-wtools'
+          - 'git+https:///github.com/Wandalen/EslintPluginForWtools.git'
+          - 'npm:///eslint-plugin-for-wtools'
       bugtracker:
-        path: 'https:///github.com/Wandalen/EslintSpaceInParensAdvanced/issues'
+        path: 'https:///github.com/Wandalen/EslintPluginForWtools/issues'
       in:
         path: .
       out:
