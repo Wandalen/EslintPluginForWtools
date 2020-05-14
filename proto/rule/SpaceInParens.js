@@ -31,16 +31,16 @@ function create( context )
     Program,
     // FunctionDeclaration,
   }
-  const ALWAYS = context.options[ 0 ] === 'always',
-    exceptionsArrayOptions = ( context.options[ 1 ] && context.options[ 1 ].exceptions ) || [],
-    options = {};
+  const ALWAYS = context.options[ 0 ] === 'always';
+  const exceptionsArrayOptions = ( context.options[ 1 ] && context.options[ 1 ].exceptions ) || [];
+  const options = {};
 
   let exceptions;
 
   if( 0 )
   {
     console.log( 0, [ 1, 2, 3 ] );
-    console.log([ 1, 2, 3 ]);
+    console.log( [ 1, 2, 3 ] );
   }
 
   if( exceptionsArrayOptions.length )
@@ -81,7 +81,7 @@ function create( context )
       if( token.value === '(' && openerMissingSpace( token, nextToken ) )
       {
         context.report
-        ({
+        ( {
           node,
           loc : token.loc,
           messageId : 'missingOpeningSpace',
@@ -89,28 +89,28 @@ function create( context )
           {
             return fixer.insertTextAfter( token, ' ' );
           }
-        });
+        } );
       }
 
       // if token is an opening paren and is followed by a disallowed space
       if( token.value === '(' && openerRejectsSpace( token, nextToken ) )
       {
-        context.report({
+        context.report( {
           node,
           loc : { start : token.loc.end, end : nextToken.loc.start },
           messageId : 'rejectedOpeningSpace',
           fix( fixer )
           {
-            return fixer.removeRange([ token.range[ 1 ], nextToken.range[ 0 ] ]);
+            return fixer.removeRange( [ token.range[ 1 ], nextToken.range[ 0 ] ] );
           }
-        });
+        } );
       }
 
       // if token is a closing paren and is not preceded by a required space
       if( token.value === ')' && closerMissingSpace( prevToken, token ) )
       {
         context.report
-        ({
+        ( {
           node,
           loc : token.loc,
           messageId : 'missingClosingSpace',
@@ -118,24 +118,24 @@ function create( context )
           {
             return fixer.insertTextBefore( token, ' ' );
           }
-        });
+        } );
       }
 
       // if token is a closing paren and is preceded by a disallowed space
       if( token.value === ')' && closerRejectsSpace( prevToken, token ) )
       {
         context.report
-        ({
+        ( {
           node,
           loc : { start : prevToken.loc.end, end : token.loc.start },
           messageId : 'rejectedClosingSpace',
           fix( fixer )
           {
-            return fixer.removeRange([ prevToken.range[ 1 ], token.range[ 0 ] ]);
+            return fixer.removeRange( [ prevToken.range[ 1 ], token.range[ 0 ] ] );
           }
-        });
+        } );
       }
-    });
+    } );
 
   }
 

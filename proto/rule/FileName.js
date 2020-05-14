@@ -15,14 +15,14 @@ function create( context )
     Program,
   }
   const options = context.options[ 0 ] || {};
-  const ignore = ( options.ignore || []).map( ( item ) =>
+  const ignore = ( options.ignore || [] ).map( ( item ) =>
   {
     if( item instanceof RegExp )
     {
       return item;
     }
     return new RegExp( item, 'u' );
-  });
+  } );
   const filePath = context.getFilename();
 
   if( filePath === '<input>' || filePath === '<text>' )
@@ -44,7 +44,7 @@ function create( context )
     if( ignore.some( ( regexp ) => regexp.test( base ) ) )
     return;
 
-    if( fileName[ 0 ].toUpperCase() !== fileName[ 0 ])
+    if( fileName[ 0 ].toUpperCase() !== fileName[ 0 ] )
     valid = false;
 
     if( fileName.slice( 1 ).indexOf( '_' ) !== -1 )
@@ -54,14 +54,14 @@ function create( context )
     return;
 
     context.report
-    ({
+    ( {
       node,
       messageId : 'renameMsg',
       data :
       {
         fullFileName,
       }
-    });
+    } );
   }
 
 };
