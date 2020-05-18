@@ -311,7 +311,8 @@ module.exports =
         properties : {
           exceptions : {
             type : 'array',
-            items : {
+            items :
+            {
               enum : [ '{}', '[]', '()', 'empty' ]
             },
             uniqueItems : true
