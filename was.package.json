@@ -4,7 +4,7 @@
   "description" : "Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
-  "main" : "proto/Main.js",
+  "main" : "proto/secondary/eslintPluginForWtools/Main.js",
   "files" : [ "proto" ],
   "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
   "repository" :
