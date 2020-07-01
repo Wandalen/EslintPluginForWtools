@@ -2,10 +2,13 @@ format: outwillfile-2.0
 root:
   - eslint-plugin-for-wtools.out
 consistency:
-  ../.ex.will.yml: &ref_0
+  eslint-plugin-for-wtools.out.will.yml: &ref_0
+    hash: 726ca2a6d8d32b9740cc08c5cf501f90
+    size: 37263
+  ../.ex.will.yml: &ref_1
     hash: 4c052e21d9a5aab92c9e37f5b8cdd968
     size: 1848
-  ../.im.will.yml: &ref_1
+  ../.im.will.yml: &ref_2
     hash: 4d50067f99d440571081c839fdead757
     size: 4519
 module:
@@ -18,19 +21,19 @@ module:
         single argument call case.
       enabled: 1
       version: 0.4.0
-      interpreters: &ref_2
+      interpreters:
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
+      keywords:
         - eslint
         - space-in-parens
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors:
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: eslint-plugin-for-wtools
-      npm.scripts: &ref_5
+      npm.scripts:
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -666,6 +669,24 @@ module:
           content: prime
         inherit:
           - files.transpile
+      exported.proto.export:
+        opts:
+          filePath: 'reflector::exported.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
+      exported.files.proto.export:
+        opts:
+          filePath: 'reflector::exported.files.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
     build:
       proto.export:
         steps:
@@ -754,8 +775,9 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      eslint-plugin-for-wtools.out.will.yml: *ref_0
+      ../.ex.will.yml: *ref_1
+      ../.im.will.yml: *ref_2
   ../:
     about:
       name: eslint-plugin-for-wtools
@@ -765,13 +787,21 @@ module:
         single argument call case.
       enabled: 1
       version: 0.4.0
-      interpreters: *ref_2
-      keywords: *ref_3
+      interpreters:
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      keywords:
+        - eslint
+        - space-in-parens
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
+      contributors:
+        - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: eslint-plugin-for-wtools
-      npm.scripts: *ref_5
+      npm.scripts:
+        test: wtest .run proto/**
+        docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
@@ -1414,3 +1444,6 @@ module:
       ../.im.will.yml:
         hash: 4d50067f99d440571081c839fdead757
         size: 4519
+      eslint-plugin-for-wtools.out.will.yml:
+        hash: 726ca2a6d8d32b9740cc08c5cf501f90
+        size: 37263
