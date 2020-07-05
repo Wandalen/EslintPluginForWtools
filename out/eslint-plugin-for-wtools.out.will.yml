@@ -153,6 +153,7 @@ module:
           export: 1
         path:
           - ../proto
+          - ../proto/Integration.test.s
           - ../proto/secondary
           - ../proto/secondary/eslintPluginForWtools
           - ../proto/secondary/eslintPluginForWtools/Int.test.js
@@ -1444,6 +1445,4 @@ module:
       ../.im.will.yml:
         hash: 4d50067f99d440571081c839fdead757
         size: 4519
-      eslint-plugin-for-wtools.out.will.yml:
-        hash: 726ca2a6d8d32b9740cc08c5cf501f90
-        size: 37263
+      eslint-plugin-for-wtools.out.will.yml: *ref_0
