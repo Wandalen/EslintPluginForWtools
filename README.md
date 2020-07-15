@@ -6,5 +6,5 @@ Extends rule `space-in-parens` of `eslint`. Implement exception for single argum
 ## Try out
 ```
 npm install
-node sample/Sample.js
+node sample/Sample.s
 ```
