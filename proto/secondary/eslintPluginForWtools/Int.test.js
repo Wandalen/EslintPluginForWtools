@@ -24,7 +24,7 @@ let _ = _global_.wTools;
 //
 // --
 
-var Self =
+let Self =
 {
 
   name : 'eslint.space.in.parens.advanced',

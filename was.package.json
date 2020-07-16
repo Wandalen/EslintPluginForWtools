@@ -17,7 +17,7 @@
     "url" : "https://github.com/Wandalen/EslintPluginForWtools/issues"
   },
   "dependencies" : { "lodash" : "" },
-  "peerDependency" : { "eslint" : "" },
+  "peerDependency" : { "eslint" : "7.1.0" },
   "devDependencies" : { "wTesting" : "", "eslint-plugin-for-wtools" : "file:." },
   "keywords" : [ "eslint", "eslintplugin", "space-in-parens" ]
 }
