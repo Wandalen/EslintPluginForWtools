@@ -6,7 +6,7 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( 'wTesting' );
+  const _ = require( 'wTesting' );
 
   debugger;
   let plugin = require( 'eslint-plugin-for-wtools' );
@@ -14,7 +14,7 @@ if( typeof module !== 'undefined' )
 
 }
 
-let _ = _global_.wTools;
+const _ = _global_.wTools;
 
 // --
 //
@@ -24,7 +24,7 @@ let _ = _global_.wTools;
 //
 // --
 
-let Self =
+const Proto =
 {
 
   name : 'eslint.space.in.parens.advanced',
@@ -39,7 +39,7 @@ let Self =
 
 //
 
-Self = wTestSuite( Self );
+const Self = wTestSuite( Proto );
 if( typeof module !== 'undefined' && !module.parent )
 _global_.wTester.test( Self.name );
 

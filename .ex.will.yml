@@ -5,7 +5,7 @@ about :
   name : 'eslint-plugin-for-wtools'
   description : 'Extends rule `space-in-parens` of `eslint`. Implement exception for single argument call case.'
   version : '0.4.0'
-  enabled : 1
+  enabled : 0
   interpreters :
   - njs >= 10.0.0
   - chrome >= 60.0.0

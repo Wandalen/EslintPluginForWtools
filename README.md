@@ -8,7 +8,7 @@ Extends rule `space-in-parens` of `eslint`. Implement exception for single argum
 git clone https://github.com/Wandalen/eslint-plugin-for-wtools
 cd eslint-plugin-for-wtools
 npm install
-node sample/Sample.s
+node sample/trivial/Sample.s
 ```
 
 ## To add to your project
